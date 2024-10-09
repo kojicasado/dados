@@ -1,56 +1,52 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:ital,opsz, wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 :root {
---bg-color: #222831;
---primary-color: #DDDDDD;
---secondary-color: #F05454;
---font: "Nunito Sans", sans-serif;
+    --bg-color: #254336;
+    --primary-color: #DAD3BE;
+    --secondary-color: #6B8A7A;
+    --font: ““Nunito Sans”, sans-serif;
 }
 
 body {
-background-color: var(--bg-color);
-color: var(--primary-color);
-font-family: var(--font);
-height: 100vh;
-margin: 0;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: var(--font);
+    height: 100vh;
+    margin: 0;
 }
 
 header {
-background-color: var(--primary-color);
-text-align: center;
-padding: 1px;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1px;
 }
 
 h1 {
-    font-size: 2rem; 
-    color: var(--bg-color); 
+    font-size: 2rem;
+    color: var(--bg-color);
     font-weight: 700;
-    }
+}
 
-    nav {
-    display: flex; 
-    justify-content: center; 
-    font-weight: 400;
-    }
+nav {
+    display: flex;/*para posicionar os elementos de forma melhor*/
+    justify-content: center;/*para alinhar no centro da página*/
+    font-weight: 400;/*fonte fina*/
+}
 
-    nav a {
-    text-decoration: none; 
-    color: var(--bg-color
-    transform: scale(0.90);
-    transition: transform 0.1s;
-    }
-); 
-    margin: 0 2rem irem erem; 
-    font-size: 1.2rem;
-    }
+nav a {
+    text-decoration: none;
+    color: var(--bg-color);
+    margin: 0 2rem 1rem 0rem;/* A margem terá 0rem à esquerda, 2rem acima, 1rem à direita e 0rem abaixo.*/
+    font-size: 1.2rem;/* para aumentar um pouco o tamanho da fonte dos links*/
+}
 
-    nav a:hover {
-    text-decoration: underline;
-    transform: scale(0.90);
-    transition: transform 0.1s;
-    }
+nav a:hover {
+    text-decoration: underline;/*para aparecer o sublinhado*/
+    transform: scale(0.90);/*diminuir a fonte ao passar o mouse*/
+    transition: trasform 0.1s;/*fará a animação acontecer um pouco mais devagar*/
+}
 
-    footer {
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,4 +55,4 @@ h1 {
     width: 100%;
     height: 3rem;
     margin-top: 2rem;
-    }
+}
